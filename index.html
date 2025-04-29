@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Spotted - The Fitness Revolution</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/monokai.css">
+
+    <style>
+        :root {
+            --accent: #FF3366;
+            --accent2: #00F5FF;
+        }
+
+        .reveal h1, .reveal h2 {
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .reveal h1 {
+            font-size: 3.5em;
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            color: var(--accent); /* Fallback */
+        }
+
+        .reveal h2 {
+            color: var(--accent);
+        }
+
+        .reveal strong {
+            color: var(--accent);
+        }
+
+        .reveal table {
+            font-size: 0.8em;
+        }
+
+        .reveal table th {
+            background-color: rgba(255, 51, 102, 0.3);
+        }
+
+        .reveal .slides {
+            text-align: left;
+        }
+
+        .reveal .slides section {
+            height: 100%;
+        }
+
+        .reveal img {
+            max-height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown>
+                <textarea data-template>
+                    # Spotted
+## The Fitness Revolution
+
+---
+
+## Team Members
+- **Petr Borovlev**: Backend Development
+- **Stanislav Sandler**: Frontend/Mobile Development
+- **Georgii Gromov**: DevOps & Infrastructure
+- **Alexander Khokhlyavin**: Mentor
+
+---
+
+## Introduction to the Domain
+- **Overview**: Social fitness applications that combine workout tracking with social networking
+- **Why this domain?**:
+  - Studies show ~50% of people quit gym after first 6 months
+  - 67% of gym memberships are underutilized
+  - Social accountability significantly improves exercise commitment
+  - Current solutions are often too complex or sport-specific
+
+---
+
+## Project Description
+- **Spotted**: A modern social network designed specifically for fitness enthusiasts
+- **Purpose**: Increase workout consistency through social accountability
+- **Target Audience**: Fitness enthusiasts of all levels seeking motivation
+- **Problem Solved**: Combats workout inconsistency and gym dropout through social engagement
+
+---
+
+## Analogs & Competitors
+
+| App | Strengths | Limitations |
+|-----|-----------|-------------|
+| Strava | Social feed, challenges | UI too complicated |
+| Slopes | Friend groups, location sharing | Skiing specific |
+| Adidas Running | Gamification, challenges | Running specific |
+| Apple Fitness | Friend groups | Platform specific |
+
+---
+
+## What Makes Spotted Different?
+- **Simplicity**: Zero fluff design, one-tap check-in
+- **Cross-Platform**: Available on iOS, Android, and Web
+- **Social Focus**: Built around accountability and community
+- **Privacy Control**: Users decide who sees their content
+
+---
+
+## Technologies Used
+
+| Technology | Usage |
+|------------|-------|
+| Kotlin | Backend language |
+| Ktor | Web framework |
+| Exposed | ORM for PostgreSQL |
+| PostgreSQL | Database |
+| JWT | Authentication |
+| Bcrypt | Password hashing |
+| Swagger UI | API documentation |
+
+---
+
+## Architecture
+<!--![Architecture Diagram](assets/screenshot.png)-->
+
+- **Backend**: Kotlin-based API with PostgreSQL database
+- **Frontend**: Cross-platform mobile app with web support
+- **Cloud Infrastructure**: Render cloud services
+- **Storage**: S3 storage via Supabase
+
+---
+
+## Backend (Petr Borovlev)
+- **Implemented Features**:
+  - User registration & authentication with JWT
+  - Post creation with photos, emoji, and description
+  - Social features: likes, comments, user profiles
+  - API documentation with Swagger UI
+- **Status**: Core functionality complete, preparing for scaling
+
+---
+
+## Frontend (Stanislav Sandler)
+- **Implemented Features**:
+  - Cross-platform mobile application
+  - Activity photo sharing in real-time
+  - Social engagement with reactions and comments
+  - Visual progress tracking
+- **Status**: UI/UX complete, integrating with backend API
+
+---
+
+## DevOps (Georgii Gromov)
+- **Implemented Infrastructure**:
+  - Cloud deployment on Render
+  - PostgreSQL database hosting
+  - S3 storage integration with Supabase
+  - CI/CD pipeline for automated builds
+  - Landing page deployment
+- **Status**: Production environment ready, monitoring in place
+
+---
+
+## Key Features
+- 📸 **Activity Photo Sharing**: Capture and share fitness moments
+- 👥 **Social Engagement**: React to friends' posts with emojis and comments
+- 🏆 **Challenge System**: Send challenges to friends
+- 📊 **Visual Progress**: Track statistics and progress over time
+- 🔄 **Cross-Platform**: Use on any device, anywhere
+
+---
+
+## App Screenshots
+![App Interface](assets/screenshot.png)
+
+---
+
+## Current Status & Next Steps
+- **Completed**:
+  - Core backend API
+  - Mobile app UI/UX
+  - Cloud infrastructure
+  - Landing page
+
+- **In Progress**:
+  - Feed algorithm for friends' posts
+  - Friend requests system
+  - Smart username search
+
+---
+
+## Demo
+<!-- Demo video would be inserted here -->
+[Live Demo]
+
+---
+
+## GitHub Repository
+- Frontend: https://github.com/super-duper-gym/mobile-app
+- Backend: https://github.com/super-duper-gym/API
+- Landing: https://github.com/super-duper-gym/web-landing
+
+---
+
+## Thank You!
+### Questions?
+
+![Spotted](assets/mirror.jpg)
+                </textarea>
+        </section>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/zoom/zoom.js"></script>
+
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+        transition: 'slide',
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
+    });
+</script>
+</body>
+</html>
