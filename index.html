@@ -36,8 +36,7 @@
     <section data-markdown>
 <textarea data-template>
 ## Introduction to the Domain
-Social‑fitness platforms fuse **activity tracking** with **accountability loops**.  
-Despite dozens of trackers, dropout rates stay > 50 % after 6 months — people need *motivation*, not more fields to fill.
+Despite dozens of social-fitness platforms **> 50%** quit in **6 month** 
 </textarea>
     </section>
 
@@ -45,7 +44,7 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
     <section data-markdown>
 <textarea data-template>
 ## Project Description
-**Spotted** eliminates logging friction. One tap, one photo, back to the weights. Friends react in real‑time, streaks keep you honest, and trainers can plug in programs when you’re ready to level up.
+**Spotted** seamlessly integrates in your workout tracking process at **zero time cost**
 </textarea>
     </section>
 
@@ -55,24 +54,12 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 ## Why Spotted?
 - 🔥 **Zero‑Fluff Design** — pure, raw functionality that stays out of your way.
 - ⚡ **One‑Tap Check‑In** — snap → done; no distraction mid‑workout.
-- 🔄 **Social Accountability Loop** — reactions & streaks pull you back tomorrow.
-- 🤝 **Trainer Discovery (coming)** — book a pro in your gym in two taps.
+- 🔄 **Social Accountability Loop** — reactions & friends posts pull you back tomorrow.
+- 🔒 **Privacy** - 100% GDPR Compiant
 </textarea>
     </section>
 
-    <!-- Monetization Model -->
-    <section data-markdown>
-<textarea data-template>
-## Monetization Model
-| Tier | / mo | Unlocks |
-|------|------|---------|
-| **Free** | €0 | Unlimited check‑ins, basic feed |
-| **Pro** | €4.99 | Trainer finder, workout plans, advanced stats |
-| **Team** | €29 | 10 seats, group challenges, branded leaderboards |
-</textarea>
-    </section>
-
-    <!-- Social Proof -->
+    <!-- Social Proof
     <section data-markdown>
 <textarea data-template>
 ## Users Are Already Hooked
@@ -85,7 +72,7 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 > “Seeing my friends check in makes me *want* to hit the gym ASAP.”  
 > — **Sarah L.**, Yoga instructor
 </textarea>
-    </section>
+    </section> -->
 
     <!-- Analogs & Comparison -->
     <section data-markdown>
@@ -106,6 +93,8 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 ## Technologies Used
 | Tech | Purpose |
 |------|---------|
+| KMP | UI |
+| Native Camera | Camera for mobile devices |
 | Kotlin + Ktor | REST API backend |
 | React Native | iOS / Android client |
 | PostgreSQL + Exposed | Relational store & ORM |
@@ -119,9 +108,8 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
     <!-- Architecture -->
     <section data-markdown>
 <textarea data-template>
-## Architecture (Big Picture)
+## Architecture
 ![Architecture Diagram](assets/architecture.png)
-*Clients* ↔ **Ktor API** ↔ *PostgreSQL* / *S3 storage*
 </textarea>
     </section>
 
@@ -129,10 +117,10 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
     <section data-markdown>
 <textarea data-template>
 ## Petr Borovlev — Backend
-- Auth (JWT rotation) ✅
-- Post endpoints (photo upload, captions) ✅
-- Social graph (follow, like, comment) 🔄 80 %
-- Feed algorithm v1 🚧 ETA May 10
+- Auth (JWT, Bcrypt) ✅
+- Post endpoints ✅
+- Social endpoints 🔄 80 %
+- Feed algorithm v1 🚧 ETA May 16
 </textarea>
     </section>
 
@@ -153,12 +141,26 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 ## Georgii Gromov — DevOps & Infra
 - Render CI/CD (blue‑green) ✅
 - DB migrations with Flyway ✅
+- Google Analytics ✅
 - Prometheus + Grafana monitoring 🔄 50 %
 - Load tests 🚧 ETA May 12
 </textarea>
     </section>
 
-    <!-- Plans -->
+  
+    <!-- Monetization Model -->
+    <section data-markdown>
+      <textarea data-template>
+      ## Monetization Model
+      | Tier | / mo | Unlocks |
+      |------|------|---------|
+      | **Free** | €0 | Unlimited check‑ins, basic feed |
+      | **Pro** | €4.99 | Trainer finder, workout plans, advanced stats |
+      | **Team** | €29 | 10 seats, group challenges, branded leaderboards |
+      </textarea>
+          </section>
+
+    <!-- Plans
     <section data-markdown>
 <textarea data-template>
 ## Realistic Plans until Final Defense
@@ -169,9 +171,9 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 5. Polish UI & accessibility (May 30)  
 6. Record final demo video (June 1)
 </textarea>
-    </section>
+    </section> -->
 
-    <!-- Status Recap -->
+    <!-- Status Recap
     <section data-markdown>
 <textarea data-template>
 ## Project Status at a Glance
@@ -181,20 +183,24 @@ Despite dozens of trackers, dropout rates stay > 50 % after 6 months — pe
 | Mobile | Stanislav | 70 % | Progress UI | Beta polish |
 | DevOps | Georgii | 60 % | Monitoring | Load tests |
 </textarea>
-    </section>
+    </section> -->
 
     <!-- Screenshot -->
     <section data-markdown>
 <textarea data-template>
 ## Current App Snapshot
-![Mobile UI](assets/app-screenshot.png)
+![Mobile UI](assets/ui1.jpg)
+![Mobile UI](assets/ui2.jpg)
+![Mobile UI](assets/ui3.jpg)
+![Mobile UI](assets/ui5.jpg)
+![Mobile UI](assets/ui6.jpg)
 </textarea>
     </section>
 
     <!-- Demo -->
     <section data-markdown>
 <textarea data-template>
-## 60‑Second Demo
+## Quick Demo
 ![Quick demo](assets/demo.gif)
 </textarea>
     </section>
